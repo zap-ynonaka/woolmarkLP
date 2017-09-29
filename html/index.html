@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+  <!-- Google Tag Manager -->
+  <script language="javascript">
+    var dataLayer = dataLayer || [];
+    dataLayer.push({
+    'deviceType':'pc',
+    'contentType':'folder'
+    });
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
-  <link rel="stylesheet" href="css/style.css">
+
+
+  <meta property="og:title" content="ページのタイトル" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="ページのURL" />
+  <meta property="og:image" content="サムネイル画像のURL" />
+  <meta property="og:site_name" content="ひつじちゃん診断" />
+  <meta property="og:description" content="ページのディスクリプション" />
+  <!-- Facebook用設定 -->
+  <meta property="fb:app_id" content="1317260838384586" />
+  <!-- ※Twitter共通設定 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Campaignforwool ‏">
+  <meta name="twitter:creator" content="@Campaignforwool ‏">
+  <meta name="twitter:title" content="記事のタイトル">
+  <meta name="twitter:description" content="記事の説明">
+  <meta name="twitter:image" content="画像のURL">
+  </head>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
   <script src="js/index.js"></script>
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T9N4RC" 
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T9N4RC');
+</script>
+
+  <header>
+    <div class="home-page-image-wrapper">
+      <h1><img src="img/home-logo.png" alt="Woolmark Logo"></h1>
+    </div>
+  </header>
+
   <main>
     <div class="container-content">
-      <div class="home-page-image-wrapper">
-        <h1><img src="img/home-logo.png" alt="Woolmark Logo"></h1>
-      </div>
 
       <div class="que-start__btn">
         <a href="que.html">診断スタート</a>
@@ -40,14 +82,31 @@
       </div>
 
       <div class="elle-shop__banner">
-        <a href="#"><img src="https://placehold.jp/f4e5dd/ffffff/480x120.png?text=%E3%83%90%E3%83%8A%E3%83%BC%E3%81%98%E3%82%83%E3%82%88" alt=""></a>
+        <a href="https://elleshop.jp/web/campaign/000/0649/?utm_source=hearst&utm_medium=sister&utm_campaign=hearst_wool_170925&sid=hearst_wool_170925"><img src="img/ELLESHOP.jpg" alt=""></a>
       </div>
 
     </div>
 
-    <footer>
-      <div>Copyright © 2017 Campaign for Wool All rights reserved.</div>
-    </footer>
+    <section>
+      <ul class="">
+        <li>
+          <a title="facebookでシェアする" href="http://www.facebook.com/sharer.php?u=【シェアしたいURL】&t=【記事のタイトル】" target="_blank">
+            <img src="https://placehold.jp/f4e5dd/ffffff/480x120.png?text=%E3%83%90%E3%83%8A%E3%83%BC%E3%81%98%E3%82%83%E3%82%88">
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/share?url=【ツイートしたいURL】&text=【ツイートしたいタイトル】&via=【@につけたいユーザー名】&related=【ツイートに関連するユーザー】&hashtags=【ハッシュタグ】" target="_blank">
+            <img src="https://placehold.jp/f4e5dd/ffffff/480x120.png?text=%E3%83%90%E3%83%8A%E3%83%BC%E3%81%98%E3%82%83%E3%82%88">
+          </a>
+        </li>
+      </ul>
+    </section>
+
   </main>
+
+  <footer>
+    <div>Copyright © 2017 Campaign for Wool All rights reserved.</div>
+  </footer>
+
 </body>
 </html>
