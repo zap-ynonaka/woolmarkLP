@@ -1,14 +1,7 @@
-
 * {margin: 0;padding: 0;box-sizing: border-box;font-weight: 100;font-size: 100%}
 body {font-size: 14px;font-family: "Gotham A","Gotham B",sans-serif;}
 img {width: 100%;vertical-align: top;}
-
-
-
 .woolmark-campain {
-  width: 100%;
-  padding: 5%;
-  background-color: #f4e5dd;
   &__img {
     background-color: #fff;
     text-align: center;
@@ -19,21 +12,21 @@ img {width: 100%;vertical-align: top;}
   &__text {
     background-color: #fff;
     padding: 20px;
+    color: #878383;
     p {
       margin-bottom: 16px;
       line-height: 1.8;
       font-size: 13px;
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
     }
   }
 }
-
-
 .elle-shop__banner a {
   padding: 20px 8%;
   display: block;
 }
-
-
 footer div {
   display: flex;
   justify-content: center;
@@ -43,33 +36,37 @@ footer div {
   height: 40px;
   font-size: 12px;
 }
-
-
-
 // index.html
 .que-start__btn {
-  width: 90%;
-  margin: 20px auto;
+  line-height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
   a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ff85a2;
-    border-radius: 4px;
-    color: #fff;
+    background-color: #FFF;
+    color: #4FB748;
     text-decoration: none;
-    height: 50px;
     font-size: 16px;
+    border-radius: 30px;
+    display: block;
+  }
+  &:after {
+      content: "";
+      position: absolute;
+      transform: rotate(45deg);
+      top: 50%;
+      right: 30%;
+      width: 5px;
+      height: 5px;
+      border-right: solid 3px #4bad31;
+      border-top: solid 3px #4bad31;
   }
 }
-
 // que.html
-
 h1.que {
   width: 30%;
   margin: 0 auto;
 }
-
 form {
   width: 90%;
   margin: 0 auto 20px;
@@ -99,14 +96,10 @@ form {
     }
   }
 }
-
 .que__text {
   width: 60%;
   margin: 20px auto;
 }
-
-
-
 #que {
   li {
     display: none;
@@ -115,8 +108,6 @@ form {
     }
   }
 }
-
-
 .que__btn {
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +138,6 @@ form {
     -webkit-appearance: none;
   }
 }
-
 .que__btn label.active {
   background-color: #ff85a2;
   color: #fff;
@@ -170,7 +160,6 @@ form {
     margin: auto;
   }
 }
-
 .submit {
   width: 60%;
   margin: 10px auto 0;
@@ -179,14 +168,10 @@ form {
   align-items: center;
   color: #fff;
   height: 50px;
-  background-color: #4DB848;
+  background-color: #ff85a2;
   border-radius: 4px;
   font-size: 18px;
 }
-
-
-
-
 // result.html
 .result-area {
   position: relative;
@@ -261,37 +246,12 @@ form {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import "_custom";
-
-
-
-
-
-
-
-
-
-
 .scroll:before {
   animation-duration: 8s;
   animation-name: slidein;
   animation-iteration-count: infinite;
 }
-
 @keyframes slidein {
   0% {
       transform: rotate(2880deg);
@@ -302,5 +262,4 @@ form {
   100% {
       transform: rotate(0deg);
   }
-
 }
