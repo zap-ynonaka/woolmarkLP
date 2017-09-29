@@ -1,0 +1,29 @@
+.container-content {
+  width: 100%;
+  padding: 3%;
+  background-color: #777777;
+}
+.container-bottom {
+  padding: 20px;
+  background: #4FB748;
+}
+.top-text {
+  padding: 0px 18px 5px 0px;
+  text-align: center;
+  color: #FFF;
+}
+.event-campain {
+  p {
+    line-height: 1.8;
+    font-size: 13px;
+  }
+  &__text {
+    background-color: #fff;
+    padding: 20px;
+    color: #878383;
+  }
+}
+
+
+
+
