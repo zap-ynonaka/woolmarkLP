@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 100;
+  font-size: 100%;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Gotham A","Gotham B",sans-serif;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.woolmark-campain {
+  width: 100%;
+  padding: 5%;
+  background-color: #f4e5dd;
+}
+
+.woolmark-campain__img {
+  background-color: #fff;
+  text-align: center;
+}
+
+.woolmark-campain__img img {
+  width: 60%;
+}
+
+.woolmark-campain__text {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.woolmark-campain__text p {
+  margin-bottom: 16px;
+  line-height: 1.8;
+  font-size: 13px;
+}
+
+.elle-shop__banner a {
+  padding: 20px 8%;
+  display: block;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3c3738;
+  color: #fff;
+  height: 40px;
+  font-size: 12px;
+}
+
+.que-start__btn {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.que-start__btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff85a2;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  height: 50px;
+  font-size: 16px;
+}
+
+h1.que {
+  width: 30%;
+  margin: 0 auto;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto 20px;
+  border: 2px solid #ff85a2;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+form h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff85a2;
+  letter-spacing: 1px;
+  position: relative;
+  width: 200px;
+  margin: auto;
+}
+
+form h2:before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  background-image: url(../img/que1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: -15px;
+  right: -50px;
+}
+
+.que__text {
+  width: 60%;
+  margin: 20px auto;
+}
+
+#que li {
+  display: none;
+}
+
+#que li.active {
+  display: block;
+}
+
+.que__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.que__btn label {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 12px 12px 12px 36px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  position: relative;
+}
+
+.que__btn label:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 12px;
+  bottom: 1px;
+  margin: auto;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.que__btn input[type=radio] {
+  -webkit-appearance: none;
+}
+
+.que__btn label.active {
+  background-color: #ff85a2;
+  color: #fff;
+  border-color: #ff85a2;
+}
+
+.que__btn label.active:before {
+  border-color: #fff;
+}
+
+.que__btn label.active:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 6px;
+  border-bottom: 2px solid #ff85a2;
+  border-left: 2px solid #ff85a2;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+  left: 15px;
+  bottom: 3px;
+  margin: auto;
+}
+
+.submit {
+  width: 60%;
+  margin: 10px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  height: 50px;
+  background-color: #ff85a2;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.result-area {
+  position: relative;
+  padding-bottom: 160px;
+}
+
+.result-area__discription {
+  width: 90%;
+  margin: 50px auto 0;
+  border: 2px solid #ff709d;
+  border-radius: 16px;
+  position: relative;
+  padding-bottom: 40px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.result-area__discription h2 {
+  position: relative;
+  top: -40px;
+}
+
+.result-area__text {
+  width: 90%;
+  margin: 0 auto 20px;
+  line-height: 1.8;
+  position: relative;
+  top: -30px;
+}
+
+.result-area__sns {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  padding: 16px;
+}
+
+.result-area__sns div {
+  width: 20%;
+}
+
+.result-area__sns span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.result-area__friends {
+  padding-top: 120px;
+  background-color: #ff709d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.result-area__friends h3 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.result-area__friends ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.result-area__friends:after {
+  content: "";
+  display: block;
+  width: 200%;
+  height: 60%;
+  background-color: #fff;
+  position: absolute;
+  top: -140px;
+  left: -50%;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.scroll:before {
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    -webkit-transform: rotate(2880deg);
+            transform: rotate(2880deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes slidein {
+  0% {
+    -webkit-transform: rotate(2880deg);
+            transform: rotate(2880deg);
+  }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}

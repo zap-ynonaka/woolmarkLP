@@ -1,0 +1,299 @@
+
+* {margin: 0;padding: 0;box-sizing: border-box;font-weight: 100;font-size: 100%}
+body {font-size: 14px;font-family: "Gotham A","Gotham B",sans-serif;}
+img {width: 100%;vertical-align: top;}
+
+
+
+.woolmark-campain {
+  width: 100%;
+  padding: 5%;
+  background-color: #f4e5dd;
+  &__img {
+    background-color: #fff;
+    text-align: center;
+    img {
+      width: 60%;
+    }
+  }
+  &__text {
+    background-color: #fff;
+    padding: 20px;
+    p {
+      margin-bottom: 16px;
+      line-height: 1.8;
+      font-size: 13px;
+    }
+  }
+}
+
+
+.elle-shop__banner a {
+  padding: 20px 8%;
+  display: block;
+}
+
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c3738;
+  color: #fff;
+  height: 40px;
+  font-size: 12px;
+}
+
+
+
+// index.html
+.que-start__btn {
+  width: 90%;
+  margin: 20px auto;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff85a2;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+// que.html
+
+h1.que {
+  width: 30%;
+  margin: 0 auto;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto 20px;
+  border: 2px solid #ff85a2;
+  border-radius: 8px;
+  padding: 24px;
+  h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff85a2;
+    letter-spacing: 1px;
+    position: relative;
+    width: 200px;
+    margin: auto;
+    &:before {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      background-image: url(../img/que1.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      bottom: -15px;
+      right: -50px;
+    }
+  }
+}
+
+.que__text {
+  width: 60%;
+  margin: 20px auto;
+}
+
+
+
+#que {
+  li {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+
+.que__btn {
+  display: flex;
+  flex-wrap: wrap;
+  label {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 12px 12px 12px 36px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      left: 12px;
+      bottom: 1px;
+      margin: auto;
+      border: 1px solid #000;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+  }
+  input[type=radio] {
+    -webkit-appearance: none;
+  }
+}
+
+.que__btn label.active {
+  background-color: #ff85a2;
+  color: #fff;
+  border-color: #ff85a2;
+  &:before {
+    border-color: #fff;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 6px;
+    border-bottom: 2px solid #ff85a2;
+    border-left: 2px solid #ff85a2;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 0;
+    left: 15px;
+    bottom: 3px;
+    margin: auto;
+  }
+}
+
+.submit {
+  width: 60%;
+  margin: 10px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 50px;
+  background-color: #ff85a2;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+
+
+
+// result.html
+.result-area {
+  position: relative;
+  padding-bottom: 160px;
+  &__discription {
+    width: 90%;
+    margin: 50px auto 0;
+    border: 2px solid #ff709d;
+    border-radius: 16px;
+    position: relative;
+    padding-bottom: 40px;
+    z-index: 1;
+    background-color: #fff;
+    h2 {
+      position: relative;
+      top: -40px;
+    }
+  }
+  &__text {
+    width: 90%;
+    margin: 0 auto 20px;
+    line-height: 1.8;
+    position: relative;
+    top: -30px;
+  }
+  &__sns {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    padding: 16px;
+    div {
+      width: 20%;
+    }
+    span {
+      flex: 1;
+    }
+  }
+  &__friends {
+    padding-top: 120px;
+    background-color: #ff709d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    h3 {
+      width: 80%;
+      margin: 0 auto;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 200%;
+      height: 60%;
+      background-color: #fff;
+      position: absolute;
+      top: -140px;
+      left: -50%;
+      right: 0;
+      margin: auto;
+      z-index: 0;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scroll:before {
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  0% {
+      transform: rotate(2880deg);
+  }
+  30% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+
+}
