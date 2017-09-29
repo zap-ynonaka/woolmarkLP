@@ -62,22 +62,31 @@ footer div {
       border-top: solid 3px #4bad31;
   }
 }
+
 // que.html
 h1.que {
-  width: 30%;
-  margin: 0 auto;
+  background-image: url(../img/common/header_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  img {
+    width:  240px;
+  }
 }
+
 form {
   width: 90%;
   margin: 0 auto 20px;
-  border: 2px solid #ff85a2;
   border-radius: 8px;
   padding: 24px;
   h2 {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
-    color: #ff85a2;
+    color: #4bad31;
     letter-spacing: 1px;
     position: relative;
     width: 200px;
@@ -100,6 +109,7 @@ form {
   width: 60%;
   margin: 20px auto;
 }
+
 #que {
   li {
     display: none;
@@ -107,6 +117,9 @@ form {
       display: block;
     }
   }
+}
+.container-content.queForm {
+  background-color: #fbfaf8;
 }
 .que__btn {
   display: flex;
@@ -139,9 +152,9 @@ form {
   }
 }
 .que__btn label.active {
-  background-color: #ff85a2;
+  background-color: #4bad31;
   color: #fff;
-  border-color: #ff85a2;
+  border-color: #4bad31;
   &:before {
     border-color: #fff;
   }
@@ -150,8 +163,8 @@ form {
     display: block;
     width: 10px;
     height: 6px;
-    border-bottom: 2px solid #ff85a2;
-    border-left: 2px solid #ff85a2;
+    border-bottom: 2px solid #4bad31;
+    border-left: 2px solid #4bad31;
     position: absolute;
     transform: rotate(-45deg);
     top: 0;
@@ -168,8 +181,8 @@ form {
   align-items: center;
   color: #fff;
   height: 50px;
-  background-color: #ff85a2;
-  border-radius: 4px;
+  background-color: #4bad31;
+  border-radius: 50px;
   font-size: 18px;
 }
 // result.html
@@ -177,30 +190,19 @@ form {
   position: relative;
   padding-bottom: 160px;
   &__discription {
-    width: 90%;
-    margin: 50px auto 0;
-    border: 2px solid #ff709d;
-    border-radius: 16px;
     position: relative;
-    padding-bottom: 40px;
     z-index: 1;
     background-color: #fff;
     h2 {
       position: relative;
-      top: -40px;
     }
   }
   &__text {
     width: 90%;
     margin: 0 auto 20px;
     line-height: 1.8;
-    position: relative;
-    top: -30px;
   }
   &__sns {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -230,23 +232,16 @@ form {
       display: flex;
       justify-content: center;
     }
-    &:after {
-      content: "";
-      display: block;
-      width: 200%;
-      height: 60%;
-      background-color: #fff;
-      position: absolute;
-      top: -140px;
-      left: -50%;
-      right: 0;
-      margin: auto;
-      z-index: 0;
-      border-radius: 50%;
-    }
   }
 }
+
+
+
 @import "_custom";
+
+
+
+
 .scroll:before {
   animation-duration: 8s;
   animation-name: slidein;
