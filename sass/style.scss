@@ -49,17 +49,19 @@ footer div {
     font-size: 16px;
     border-radius: 30px;
     display: block;
-  }
-  &:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
       content: "";
-      position: absolute;
+      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
-      top: 50%;
-      right: 30%;
       width: 5px;
       height: 5px;
       border-right: solid 3px #4bad31;
       border-top: solid 3px #4bad31;
+      margin-left: 3px;
+  }
   }
 }
 
@@ -339,6 +341,7 @@ form {
 
 
 @import "_custom";
+<<<<<<< Updated upstream
 
 
 
@@ -359,3 +362,27 @@ form {
       transform: rotate(0deg);
   }
 }
+=======
+@import "_mediaquery";
+
+// .scroll:before {
+//   animation-duration: 8s;
+//   animation-name: slidein;
+//   animation-iteration-count: infinite;
+// }
+// @keyframes slidein {
+//   0% {
+//       transform: rotate(2880deg);
+//   }
+//   30% {
+//       transform: rotate(0deg);
+//   }
+//   100% {
+//       transform: rotate(0deg);
+//   }
+// }
+
+/*
+@media の外に記述したスタイルは、全サイズで読み込まれます。
+*/
+>>>>>>> Stashed changes
