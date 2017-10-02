@@ -10622,5 +10622,4 @@ console.log(resultHeight);
 $('.js-height').css('height', resultHeight);
 
 
-
 });
