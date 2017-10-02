@@ -6,15 +6,15 @@ img {width: 100%;vertical-align: top;}
     background-color: #fff;
     text-align: center;
     img {
-      width: 60%;
+      width: 90%;
     }
   }
   &__text {
     background-color: #fff;
     padding: 20px;
     color: #878383;
+    margin-top: -40px;
     p {
-      margin-bottom: 16px;
       line-height: 1.8;
       font-size: 13px;
       &:nth-child(2) {
@@ -341,28 +341,6 @@ form {
 
 
 @import "_custom";
-<<<<<<< Updated upstream
-
-
-
-
-.scroll:before {
-  animation-duration: 8s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-}
-@keyframes slidein {
-  0% {
-      transform: rotate(2880deg);
-  }
-  30% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(0deg);
-  }
-}
-=======
 @import "_mediaquery";
 
 // .scroll:before {
@@ -382,7 +360,4 @@ form {
 //   }
 // }
 
-/*
-@media の外に記述したスタイルは、全サイズで読み込まれます。
-*/
->>>>>>> Stashed changes
+
