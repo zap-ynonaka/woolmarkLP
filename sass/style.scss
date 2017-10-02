@@ -31,10 +31,10 @@ footer div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3c3738;
-  color: #fff;
-  height: 40px;
-  font-size: 12px;
+  color: #333333;
+  text-align:center;
+  font-weight: bold;
+  font-size:10px;
 }
 // index.html
 .que-start__btn {
@@ -49,35 +49,46 @@ footer div {
     font-size: 16px;
     border-radius: 30px;
     display: block;
-  }
-  &:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
       content: "";
-      position: absolute;
+      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
-      top: 50%;
-      right: 30%;
       width: 5px;
       height: 5px;
       border-right: solid 3px #4bad31;
       border-top: solid 3px #4bad31;
+      margin-left: 3px;
+  }
   }
 }
+
 // que.html
 h1.que {
-  width: 30%;
-  margin: 0 auto;
+  background-image: url('../img/common/header_bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  img {
+    width:  240px;
+  }
 }
+
 form {
   width: 90%;
   margin: 0 auto 20px;
-  border: 2px solid #ff85a2;
   border-radius: 8px;
   padding: 24px;
   h2 {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
-    color: #ff85a2;
+    color: #4bad31;
     letter-spacing: 1px;
     position: relative;
     width: 200px;
@@ -88,7 +99,7 @@ form {
       width: 90px;
       height: 90px;
       position: absolute;
-      background-image: url(../img/que1.png);
+      background-image: url('../img/que1.png');
       background-repeat: no-repeat;
       background-size: 100%;
       bottom: -15px;
@@ -100,6 +111,7 @@ form {
   width: 60%;
   margin: 20px auto;
 }
+
 #que {
   li {
     display: none;
@@ -107,6 +119,9 @@ form {
       display: block;
     }
   }
+}
+.container-content.queForm {
+  background-color: #fbfaf8;
 }
 .que__btn {
   display: flex;
@@ -139,9 +154,9 @@ form {
   }
 }
 .que__btn label.active {
-  background-color: #ff85a2;
+  background-color: #4bad31;
   color: #fff;
-  border-color: #ff85a2;
+  border-color: #4bad31;
   &:before {
     border-color: #fff;
   }
@@ -150,8 +165,8 @@ form {
     display: block;
     width: 10px;
     height: 6px;
-    border-bottom: 2px solid #ff85a2;
-    border-left: 2px solid #ff85a2;
+    border-bottom: 2px solid #4bad31;
+    border-left: 2px solid #4bad31;
     position: absolute;
     transform: rotate(-45deg);
     top: 0;
@@ -168,85 +183,169 @@ form {
   align-items: center;
   color: #fff;
   height: 50px;
-  background-color: #ff85a2;
-  border-radius: 4px;
+  background-color: #4bad31;
+  border-radius: 50px;
   font-size: 18px;
 }
 // result.html
 .result-area {
   position: relative;
-  padding-bottom: 160px;
   &__discription {
-    width: 90%;
-    margin: 50px auto 0;
-    border: 2px solid #ff709d;
-    border-radius: 16px;
     position: relative;
-    padding-bottom: 40px;
+    padding: 32px;
     z-index: 1;
-    background-color: #fff;
+    background-color: #fbfaf8;
     h2 {
       position: relative;
-      top: -40px;
+      color: #3bb028;
+      font-size: 5.4vw;
+      text-align: center;
     }
   }
-  &__text {
-    width: 90%;
-    margin: 0 auto 20px;
-    line-height: 1.8;
+  &__image {
     position: relative;
-    top: -30px;
+    span {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      img {position: absolute;}
+      &.image__before img {
+        width: 35%;
+        top: 11%;
+      }
+      &.image__bg img {
+        width: 85%;
+        top: 15.5%;
+        left: 6.5%;
+      }
+      &.image__main img {
+        width: 60%;
+        top: 26%;
+        left: 22%;
+      }
+    }
+  }
+  &__caption {
+    color: #3bb028;
+    font-size: 5vw;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__text {
+    padding: 16px 0;
+    line-height: 1.8;
+  }
+  &__merit {
+    background-color: #ffffff;
+    color: #50b848;
+    padding: 16px;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: 26px 22px;
+    &.no {
+      &_01 {background-image: url('../img/result/kekka_05_img.png');}
+    }
+    > div:first-child {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 6vw;
+      padding-top: 20px;
+      padding-left: 90px;
+      height: 80px;
+      width: 300px;
+      margin: 0 auto;
+      position: relative;
+      span {
+        font-size: 4vw;
+        position: absolute;
+        top: 10px;
+        left: 90px;
+      }
+    }
   }
   &__sns {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 80px;
-    padding: 16px;
+    padding: 16px 0 0;
     div {
-      width: 20%;
+      width: 25%;
+      padding-left: 12px;
+      a {display: block;}
     }
     span {
       flex: 1;
+      font-size: 4.5vw;
+      color: #3bb028;
+      position: relative;
+      &:before,&:after {
+        content: "";
+        display: block;
+        width: 2.3vw;
+        height: 2.3vw;
+        border-top: 2px solid;
+        border-right: 2px solid;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      &:before {
+        right: -2%;        
+      }
+      &:after {
+        right: 2.7%;
+      }
     }
   }
   &__friends {
-    padding-top: 120px;
-    background-color: #ff709d;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    background-image: url('../img/result/nakayoshi_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #fbfaf8;  
+    padding: 16px 0;  
     width: 100%;
     h3 {
       width: 80%;
       margin: 0 auto;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      font-size: 5vw;
     }
     ul {
       list-style-type: none;
       display: flex;
       justify-content: center;
     }
-    &:after {
-      content: "";
-      display: block;
-      width: 200%;
-      height: 60%;
-      background-color: #fff;
-      position: absolute;
-      top: -140px;
-      left: -50%;
-      right: 0;
-      margin: auto;
-      z-index: 0;
-      border-radius: 50%;
-    }
+    li {
+      width: 26%;
+      margin: 0 6px;
+      background-image: url(../img/result/kekka_nakayoshi_btn.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 16px;
+  }
   }
 }
+
+
 @import "_custom";
+<<<<<<< Updated upstream
+
+
+
+
 .scroll:before {
   animation-duration: 8s;
   animation-name: slidein;
@@ -263,3 +362,27 @@ form {
       transform: rotate(0deg);
   }
 }
+=======
+@import "_mediaquery";
+
+// .scroll:before {
+//   animation-duration: 8s;
+//   animation-name: slidein;
+//   animation-iteration-count: infinite;
+// }
+// @keyframes slidein {
+//   0% {
+//       transform: rotate(2880deg);
+//   }
+//   30% {
+//       transform: rotate(0deg);
+//   }
+//   100% {
+//       transform: rotate(0deg);
+//   }
+// }
+
+/*
+@media の外に記述したスタイルは、全サイズで読み込まれます。
+*/
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -16,12 +17,6 @@ img {
   vertical-align: top;
 }
 
-.woolmark-campain {
-  width: 100%;
-  padding: 5%;
-  background-color: #f4e5dd;
-}
-
 .woolmark-campain__img {
   background-color: #fff;
   text-align: center;
@@ -34,12 +29,17 @@ img {
 .woolmark-campain__text {
   background-color: #fff;
   padding: 20px;
+  color: #878383;
 }
 
 .woolmark-campain__text p {
   margin-bottom: 16px;
   line-height: 1.8;
   font-size: 13px;
+}
+
+.woolmark-campain__text p:nth-child(2) {
+  margin-bottom: 0;
 }
 
 .elle-shop__banner a {
@@ -57,44 +57,71 @@ footer div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #3c3738;
-  color: #fff;
-  height: 40px;
-  font-size: 12px;
+  color: #333333;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10px;
 }
 
 .que-start__btn {
-  width: 90%;
-  margin: 20px auto;
+  line-height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
 }
 
 .que-start__btn a {
+  background-color: #FFF;
+  color: #4FB748;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ff85a2;
-  border-radius: 4px;
-  color: #fff;
-  text-decoration: none;
-  height: 50px;
-  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.que-start__btn a:after {
+  content: "";
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 5px;
+  height: 5px;
+  border-right: solid 3px #4bad31;
+  border-top: solid 3px #4bad31;
+  margin-left: 3px;
 }
 
 h1.que {
-  width: 30%;
-  margin: 0 auto;
+  background-image: url("../img/common/header_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+}
+
+h1.que img {
+  width: 240px;
 }
 
 form {
   width: 90%;
   margin: 0 auto 20px;
-  border: 2px solid #ff85a2;
   border-radius: 8px;
   padding: 24px;
 }
@@ -103,7 +130,7 @@ form h2 {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
-  color: #ff85a2;
+  color: #4bad31;
   letter-spacing: 1px;
   position: relative;
   width: 200px;
@@ -116,7 +143,7 @@ form h2:before {
   width: 90px;
   height: 90px;
   position: absolute;
-  background-image: url(../img/que1.png);
+  background-image: url("../img/que1.png");
   background-repeat: no-repeat;
   background-size: 100%;
   bottom: -15px;
@@ -134,6 +161,10 @@ form h2:before {
 
 #que li.active {
   display: block;
+}
+
+.container-content.queForm {
+  background-color: #fbfaf8;
 }
 
 .que__btn {
@@ -174,9 +205,9 @@ form h2:before {
 }
 
 .que__btn label.active {
-  background-color: #ff85a2;
+  background-color: #4bad31;
   color: #fff;
-  border-color: #ff85a2;
+  border-color: #4bad31;
 }
 
 .que__btn label.active:before {
@@ -188,8 +219,8 @@ form h2:before {
   display: block;
   width: 10px;
   height: 6px;
-  border-bottom: 2px solid #ff85a2;
-  border-left: 2px solid #ff85a2;
+  border-bottom: 2px solid #4bad31;
+  border-left: 2px solid #4bad31;
   position: absolute;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -213,44 +244,116 @@ form h2:before {
           align-items: center;
   color: #fff;
   height: 50px;
-  background-color: #4DB848;
-  border-radius: 4px;
+  background-color: #4bad31;
+  border-radius: 50px;
   font-size: 18px;
 }
 
 .result-area {
   position: relative;
-  padding-bottom: 160px;
 }
 
 .result-area__discription {
-  width: 90%;
-  margin: 50px auto 0;
-  border: 2px solid #ff709d;
-  border-radius: 16px;
   position: relative;
-  padding-bottom: 40px;
+  padding: 32px;
   z-index: 1;
-  background-color: #fff;
+  background-color: #fbfaf8;
 }
 
 .result-area__discription h2 {
   position: relative;
-  top: -40px;
+  color: #3bb028;
+  font-size: 5.4vw;
+  text-align: center;
+}
+
+.result-area__image {
+  position: relative;
+}
+
+.result-area__image span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.result-area__image span img {
+  position: absolute;
+}
+
+.result-area__image span.image__before img {
+  width: 35%;
+  top: 11%;
+}
+
+.result-area__image span.image__bg img {
+  width: 85%;
+  top: 15.5%;
+  left: 6.5%;
+}
+
+.result-area__image span.image__main img {
+  width: 60%;
+  top: 26%;
+  left: 22%;
+}
+
+.result-area__caption {
+  color: #3bb028;
+  font-size: 5vw;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .result-area__text {
-  width: 90%;
-  margin: 0 auto 20px;
+  padding: 16px 0;
   line-height: 1.8;
+}
+
+.result-area__merit {
+  background-color: #ffffff;
+  color: #50b848;
+  padding: 16px;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: 26px 22px;
+}
+
+.result-area__merit.no_01 {
+  background-image: url("../img/result/kekka_05_img.png");
+}
+
+.result-area__merit > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 6vw;
+  padding-top: 20px;
+  padding-left: 90px;
+  height: 80px;
+  width: 300px;
+  margin: 0 auto;
   position: relative;
-  top: -30px;
+}
+
+.result-area__merit > div:first-child span {
+  font-size: 4vw;
+  position: absolute;
+  top: 10px;
+  left: 90px;
 }
 
 .result-area__sns {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,32 +364,74 @@ form h2:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
-  padding: 16px;
+  padding: 16px 0 0;
 }
 
 .result-area__sns div {
-  width: 20%;
+  width: 25%;
+  padding-left: 12px;
+}
+
+.result-area__sns div a {
+  display: block;
 }
 
 .result-area__sns span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  font-size: 4.5vw;
+  color: #3bb028;
+  position: relative;
+}
+
+.result-area__sns span:before, .result-area__sns span:after {
+  content: "";
+  display: block;
+  width: 2.3vw;
+  height: 2.3vw;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.result-area__sns span:before {
+  right: -2%;
+}
+
+.result-area__sns span:after {
+  right: 2.7%;
 }
 
 .result-area__friends {
-  padding-top: 120px;
-  background-color: #ff709d;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  background-image: url("../img/result/nakayoshi_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #fbfaf8;
+  padding: 16px 0;
   width: 100%;
 }
 
 .result-area__friends h3 {
   width: 80%;
   margin: 0 auto;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  font-size: 5vw;
 }
 
 .result-area__friends ul {
@@ -299,24 +444,18 @@ form h2:before {
           justify-content: center;
 }
 
-.result-area__friends:after {
-  content: "";
-  display: block;
-  width: 200%;
-  height: 60%;
-  background-color: #fff;
-  position: absolute;
-  top: -140px;
-  left: -50%;
-  right: 0;
-  margin: auto;
-  z-index: 0;
-  border-radius: 50%;
+.result-area__friends li {
+  width: 26%;
+  margin: 0 6px;
+  background-image: url(../img/result/kekka_nakayoshi_btn.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 16px;
 }
 
 .container-content {
   width: 100%;
-  padding: 3%;
+  padding: 16px;
   background-color: #777777;
 }
 
@@ -342,41 +481,25 @@ form h2:before {
   color: #878383;
 }
 
-.scroll:before {
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+.top_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  display: none;
 }
 
-@-webkit-keyframes slidein {
-  0% {
-    -webkit-transform: rotate(2880deg);
-            transform: rotate(2880deg);
-  }
-  30% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
+.top_image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
-@keyframes slidein {
-  0% {
-    -webkit-transform: rotate(2880deg);
-            transform: rotate(2880deg);
-  }
-  30% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
+/*
+@media の外に記述したスタイルは、全サイズで読み込まれます。
+*/

@@ -2,7 +2,6 @@
 
 $(function(){
 
-
 // que.html 選択肢labelクリックで発火
 $('label').on('click', function(){
   var index = $('li.active .que__btn label').index(this) + 1,
@@ -29,7 +28,9 @@ $('.submit').on('click', function(e){
 });
 
 
-
+var resultHeight = $('.result-area__image').width();
+console.log(resultHeight);
+$('.js-height').css('height', resultHeight);
 
 
 });
