@@ -65,7 +65,7 @@ footer div {
 
 // que.html
 h1.que {
-  background-image: url(../img/common/header_bg.png);
+  background-image: url('../img/common/header_bg.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -97,7 +97,7 @@ form {
       width: 90px;
       height: 90px;
       position: absolute;
-      background-image: url(../img/que1.png);
+      background-image: url('../img/que1.png');
       background-repeat: no-repeat;
       background-size: 100%;
       bottom: -15px;
@@ -188,53 +188,154 @@ form {
 // result.html
 .result-area {
   position: relative;
-  padding-bottom: 160px;
   &__discription {
     position: relative;
+    padding: 32px;
     z-index: 1;
-    background-color: #fff;
+    background-color: #fbfaf8;
     h2 {
       position: relative;
+      color: #3bb028;
+      font-size: 5.4vw;
+      text-align: center;
     }
   }
-  &__text {
+  &__image {
+    position: relative;
+    span {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      img {position: absolute;}
+      &.image__before img {
+        width: 35%;
+        top: 11%;
+      }
+      &.image__bg img {
+        width: 85%;
+        top: 15.5%;
+        left: 6.5%;
+      }
+      &.image__main img {
+        width: 60%;
+        top: 26%;
+        left: 22%;
+      }
+    }
+  }
+  &__caption {
+    color: #3bb028;
+    font-size: 5vw;
     width: 90%;
-    margin: 0 auto 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__text {
+    padding: 16px 0;
     line-height: 1.8;
+  }
+  &__merit {
+    background-color: #ffffff;
+    color: #50b848;
+    padding: 16px;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: 26px 22px;
+    &.no {
+      &_01 {background-image: url('../img/result/kekka_05_img.png');}
+    }
+    > div:first-child {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 6vw;
+      padding-top: 20px;
+      padding-left: 90px;
+      height: 80px;
+      width: 300px;
+      margin: 0 auto;
+      position: relative;
+      span {
+        font-size: 4vw;
+        position: absolute;
+        top: 10px;
+        left: 90px;
+      }
+    }
   }
   &__sns {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 80px;
-    padding: 16px;
+    padding: 16px 0 0;
     div {
-      width: 20%;
+      width: 25%;
+      padding-left: 12px;
+      a {display: block;}
     }
     span {
       flex: 1;
+      font-size: 4.5vw;
+      color: #3bb028;
+      position: relative;
+      &:before,&:after {
+        content: "";
+        display: block;
+        width: 2.3vw;
+        height: 2.3vw;
+        border-top: 2px solid;
+        border-right: 2px solid;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      &:before {
+        right: -2%;        
+      }
+      &:after {
+        right: 2.7%;
+      }
     }
   }
   &__friends {
-    padding-top: 120px;
-    background-color: #ff709d;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    background-image: url('../img/result/nakayoshi_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #fbfaf8;  
+    padding: 16px 0;  
     width: 100%;
     h3 {
       width: 80%;
       margin: 0 auto;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      font-size: 5vw;
     }
     ul {
       list-style-type: none;
       display: flex;
       justify-content: center;
     }
+    li {
+      width: 26%;
+      margin: 0 6px;
+      background-image: url(../img/result/kekka_nakayoshi_btn.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 16px;
+  }
   }
 }
-
 
 
 @import "_custom";
