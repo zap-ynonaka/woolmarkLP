@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -543,3 +544,7 @@ form h2:before {
     padding: 0px;
   }
 }
+
+/*
+@media の外に記述したスタイルは、全サイズで読み込まれます。
+*/
