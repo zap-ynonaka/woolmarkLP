@@ -1,6 +1,7 @@
 * {margin: 0;padding: 0;box-sizing: border-box;font-weight: 100;font-size: 100%}
 body {font-size: 14px;font-family: "Gotham A","Gotham B",sans-serif;}
 img {width: 100%;vertical-align: top;}
+li{list-style-type: none;}
 .woolmark-campain {
   &__img {
     background-color: #fff;
@@ -13,7 +14,6 @@ img {width: 100%;vertical-align: top;}
     background-color: #fff;
     padding: 20px;
     color: #878383;
-    margin-top: -40px;
     p {
       line-height: 1.8;
       font-size: 13px;

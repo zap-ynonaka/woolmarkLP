@@ -13,9 +13,11 @@
   padding: 20px;
 }
 .top-text {
-  padding: 0px 18px 5px 0px;
   text-align: center;
   color: #FFF;
+  p{
+    font-size: 3.5vw;
+  }
 }
 .event-campain {
   p {
@@ -37,17 +39,39 @@
   height: 100%;
   background-color: #FFF;
   display:none;
+  img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
 }
 
-.top_image img{
+.home-page-image-wrapper h1 {
+  position: relative;
+}
+
+.top_share_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  top: 8%;
   left: 0;
   right: 0;
-}
-
-.home-page-image-wrapper {
-  position: relative;
+  bottom: 0;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  li{
+    width: 10%;
+    margin: 0 5px;
+  }
+  a{
+    display: block;
+  }
 }
