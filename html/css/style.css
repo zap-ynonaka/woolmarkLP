@@ -29,7 +29,6 @@ img {
   background-color: #fff;
   padding: 20px;
   color: #878383;
-  margin-top: -40px;
 }
 
 .woolmark-campain__text p {
@@ -504,4 +503,22 @@ form h2:before {
 
 .home-page-image-wrapper {
   position: relative;
+}
+
+.top_share_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+.top_share_bottom img {
+  display: inline-block;
 }
