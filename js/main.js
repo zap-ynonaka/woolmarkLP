@@ -23,7 +23,7 @@ $('.submit').on('click', function(e){
     $(li).addClass('active');
   } else {
     val -= 1;
-    location.href = '/result/result_' + val + '.html';
+    location.href = '/test/result/result_' + val + '.html';
   }
 });
 

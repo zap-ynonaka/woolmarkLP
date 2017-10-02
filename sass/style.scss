@@ -1,7 +1,9 @@
 * {margin: 0;padding: 0;box-sizing: border-box;font-weight: 100;font-size: 100%}
-body {font-size: 14px;font-family: "Gotham A","Gotham B",sans-serif;}
+body {font-size: 14px;font-family: "Gotham A","Gotham B",sans-serif;background: #fbfaf8;}
 img {width: 100%;vertical-align: top;}
 li{list-style-type: none;}
+
+
 .woolmark-campain {
   &__img {
     background-color: #fff;
@@ -34,8 +36,27 @@ footer div {
   color: #333333;
   text-align:center;
   font-weight: bold;
-  font-size:10px;
 }
+
+ul.sns-area {
+  background-color: #f0efeb;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  li {
+    width: 14.5%;
+    margin: 0 4px;
+  }
+}
+
+.copy {
+  background-color: #f0efeb;
+  padding: 8px 0;
+  font-size: 1vw;
+}
+
+
+
 // index.html
 .que-start__btn {
   line-height: 50px;
@@ -80,9 +101,9 @@ h1.que {
 }
 
 form {
-  margin: 0 auto 20px;
+  margin: 0 auto 16px;
   border-radius: 8px;
-  padding: 24px;
+  padding: 16px;
   h2 {
     text-align: center;
     font-size: 18px;
@@ -107,8 +128,9 @@ form {
   }
 }
 .que__text {
-  width: 60%;
   margin: 20px auto;
+  text-align: center;
+  font-size: 5vw;
 }
 
 #que {
@@ -119,9 +141,7 @@ form {
     }
   }
 }
-.container-content.queForm {
-  background-color: #fbfaf8;
-}
+
 .que__btn {
   display: flex;
   flex-wrap: wrap;
@@ -189,9 +209,10 @@ form {
 // result.html
 .result-area {
   position: relative;
+  background-color: #fbfaf8;
   &__discription {
     position: relative;
-    padding: 32px;
+    padding: 32px 16px;
     z-index: 1;
     background-color: #fbfaf8;
     h2 {
@@ -247,17 +268,16 @@ form {
     background-repeat: no-repeat;
     background-position: 26px 22px;
     &.no {
-      &_01 {background-image: url('../img/result/kekka_05_img.png');}
+      &_01 {background-image: url('../img/result/kekka_01_bub.png');}
     }
     > div:first-child {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      font-size: 6vw;
+      font-size: 5.6vw;
       padding-top: 20px;
       padding-left: 90px;
       height: 80px;
-      width: 300px;
       margin: 0 auto;
       position: relative;
       span {
@@ -275,13 +295,13 @@ form {
     align-items: center;
     padding: 16px 0 0;
     div {
-      width: 25%;
+      width: 14%;
       padding-left: 12px;
       a {display: block;}
     }
     span {
       flex: 1;
-      font-size: 4.5vw;
+      font-size: 5vw;
       color: #3bb028;
       position: relative;
       &:before,&:after {
@@ -298,10 +318,10 @@ form {
         margin: auto;
       }
       &:before {
-        right: -2%;        
+        right: 3%;        
       }
       &:after {
-        right: 2.7%;
+        right: 8%;
       }
     }
   }
@@ -330,13 +350,15 @@ form {
     li {
       width: 26%;
       margin: 0 6px;
-      background-image: url(../img/result/kekka_nakayoshi_btn.png);
+      background-image: url('../img/result/kekka_nakayoshi_btn.png');
       background-size: 100%;
       background-repeat: no-repeat;
       padding: 16px;
-  }
+    }
   }
 }
+
+
 
 
 @import "_custom";
@@ -362,3 +384,8 @@ form {
 /*
 @media の外に記述したスタイルは、全サイズで読み込まれます。
 */
+
+// 確認用ページの広告削除　納品時削除予定
+body > div:nth-of-type(1) {
+  display: none !important;
+}

@@ -1,9 +1,97 @@
 @media screen and (max-width: 320px){
-.top-text {
+  .top-text {
     padding: 0px;
-}
-}
-  
-  @media screen and (max-width:640px) {
-  
   }
+}
+  
+@media screen and (min-width:720px) {
+  form {
+    width: 600px;
+    h2 {
+      font-size: 3vw;
+    }
+  }
+
+  .que__text {
+    font-size: 4vw;
+  }
+  .que__btn label {
+    font-size: 1.4vw;
+    padding-left: 48px;
+    &:before {
+      left: 14px;
+    }
+    &.active:after {
+      left: 17px;
+    }
+  }
+
+  .result-area__discription h2 {
+    font-size: 3vw;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .result-area > div {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .result-area__image {
+    width: 480px;
+    margin: 0 auto;    
+  }
+  .result-area__caption {
+    font-size: 3vw;
+  }
+  .result-area__text {
+    font-size: 2vw;
+  }
+  .result-area__merit {
+    background-size: 100px 100px;
+    background-position: 25px 15px;
+    font-size: 2vw;
+  }
+  .result-area__merit > div:first-child span {
+    font-size: 2vw;
+    left: 130px;
+  }
+  .result-area__merit > div:first-child {
+    font-size: 3vw;
+    height: 120px;
+    padding-left: 130px;
+  }
+  .container-content {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .result-area__sns {
+    width: 480px;margin: 0 auto;
+    span {
+      font-size: 1.5vw;
+      &:before, &:after {
+        right: 3%;
+        width: 1vw;
+        height: 1vw;
+      }
+      &:before{
+        right: 20%;
+      }
+      &:after {
+        right: 15%;
+      }
+    }
+    div {
+      width: 16%;
+    }
+  }
+
+  .result-area__friends {
+    h3 {
+      font-size: 2vw;
+    }
+    ul {
+      width: 450px;
+      margin: 12px auto 0;
+    }
+  }
+}
