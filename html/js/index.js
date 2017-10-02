@@ -10612,7 +10612,7 @@ $('.submit').on('click', function(e){
     $(li).addClass('active');
   } else {
     val -= 1;
-    location.href = '../html/result/result_' + val + '.html';
+    location.href = 'http://nomayeah.webcrow.jp/html/result/result_' + val + '.html';
   }
 });
 
