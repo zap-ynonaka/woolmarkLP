@@ -16,6 +16,10 @@ img {
   vertical-align: top;
 }
 
+li {
+  list-style-type: none;
+}
+
 .woolmark-campain__img {
   background-color: #fff;
   text-align: center;
@@ -466,9 +470,12 @@ form h2:before {
 }
 
 .top-text {
-  padding: 0px 18px 5px 0px;
   text-align: center;
   color: #FFF;
+}
+
+.top-text p {
+  font-size: 3.5vw;
 }
 
 .event-campain p {
@@ -501,7 +508,7 @@ form h2:before {
   right: 0;
 }
 
-.home-page-image-wrapper {
+.home-page-image-wrapper h1 {
   position: relative;
 }
 
@@ -509,16 +516,30 @@ form h2:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  width: 40px;
-  margin: 0 auto;
+  -webkit-box-align: center;
+          align-items: center;
   position: absolute;
-  top: 50%;
-  left: 40%;
+  top: 8%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
 }
 
-.top_share_bottom img {
-  display: inline-block;
+.top_share_bottom li {
+  width: 10%;
+  margin: 0 5px;
+}
+
+.top_share_bottom a {
+  display: block;
+}
+
+@media screen and (max-width: 320px) {
+  .top-text {
+    padding: 0px;
+  }
 }
