@@ -10612,7 +10612,7 @@ $('.submit').on('click', function(e){
     $(li).addClass('active');
   } else {
     val -= 1;
-    location.href = '/result/result_' + val + '.html';
+    location.href = '/test/result/result_' + val + '.html';
   }
 });
 
@@ -10620,6 +10620,21 @@ $('.submit').on('click', function(e){
 var resultHeight = $('.result-area__image').width();
 console.log(resultHeight);
 $('.js-height').css('height', resultHeight);
+
+
+//TOP画面を表示して３秒後に消える
+
+$('.top_image img').addClass("fadeOut");
+
+setTimeout(function(){
+  $('.top_image').addClass("fadeOut2");
+},3000);
+
+setTimeout(function(){
+  $('.top_image').css('display','none');
+},5000);
+
+
 
 
 });
