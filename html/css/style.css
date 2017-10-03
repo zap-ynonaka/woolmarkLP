@@ -37,6 +37,7 @@ li {
 
 .woolmark-campain__img img {
   width: 90%;
+  max-width: 533px;
 }
 
 .woolmark-campain__text {
@@ -57,6 +58,10 @@ li {
 .elle-shop__banner a {
   padding: 20px 8%;
   display: block;
+}
+
+footer {
+  width: 100%;
 }
 
 footer div {
@@ -96,11 +101,24 @@ ul.sns-area li {
   font-size: 1vw;
 }
 
+.container-top {
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
 .que-start__btn {
   line-height: 50px;
   padding-top: 10px;
   text-align: center;
   position: relative;
+  max-width: 360px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .que-start__btn a {
@@ -317,7 +335,7 @@ form h2:before {
 
 .result-area__image span.image__before img {
   width: 35%;
-  top: 11%;
+  top: 8%;
 }
 
 .result-area__image span.image__bg img {
@@ -355,7 +373,83 @@ form h2:before {
 }
 
 .result-area__merit.no_01 {
-  background-image: url("../img/result/kekka_01_bub.png");
+  background-image: url("../img/result/kekka_01_mas.png");
+}
+
+.result-area__merit.no_02 {
+  background-image: url("../img/result/kekka_02_bub.png");
+}
+
+.result-area__merit.no_03 {
+  background-image: url("../img/result/kekka_03_thu.png");
+}
+
+.result-area__merit.no_04 {
+  background-image: url("../img/result/kekka_04_dre.png");
+}
+
+.result-area__merit.no_05 {
+  background-image: url("../img/result/kekka_05_rub.png");
+}
+
+.result-area__merit.no_06 {
+  background-image: url("../img/result/kekka_06_kom.png");
+}
+
+.result-area__merit.no_07 {
+  background-image: url("../img/result/kekka_07_sky.png");
+}
+
+.result-area__merit.no_08 {
+  background-image: url("../img/result/kekka_08_gag.png");
+}
+
+.result-area__merit.no_09 {
+  background-image: url("../img/result/kekka_09_ele.png");
+}
+
+.result-area__merit.no_10 {
+  background-image: url("../img/result/kekka_10_pho.png");
+}
+
+.result-area__merit.no_11 {
+  background-image: url("../img/result/kekka_11_bab.png");
+}
+
+.result-area__merit.no_12 {
+  background-image: url("../img/result/kekka_12_hot.png");
+}
+
+.result-area__merit.no_13 {
+  background-image: url("../img/result/kekka_13_nat.png");
+}
+
+.result-area__merit.no_14 {
+  background-image: url("../img/result/kekka_14_mar.png");
+}
+
+.result-area__merit.no_15 {
+  background-image: url("../img/result/kekka_15_sof.png");
+}
+
+.result-area__merit.no_16 {
+  background-image: url("../img/result/kekka_16_rel.png");
+}
+
+.result-area__merit.no_17 {
+  background-image: url("../img/result/kekka_17_ter.png");
+}
+
+.result-area__merit.no_18 {
+  background-image: url("../img/result/kekka_18_sto.png");
+}
+
+.result-area__merit.no_19 {
+  background-image: url("../img/result/kekka_19_adv.png");
+}
+
+.result-area__merit.no_20 {
+  background-image: url("../img/result/kekka_20_zom.png");
 }
 
 .result-area__merit > div:first-child {
@@ -398,7 +492,7 @@ form h2:before {
 
 .result-area__sns div {
   width: 14%;
-  padding-left: 12px;
+  margin-left: 10px;
 }
 
 .result-area__sns div a {
@@ -551,17 +645,17 @@ form h2:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
   -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
   position: absolute;
   top: 8%;
   left: 0;
   right: 0;
   bottom: 0;
-  justify-content: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .top_share_bottom li {
@@ -671,6 +765,12 @@ form h2:before {
 }
 
 @media screen and (min-width: 720px) {
+  .woolmark-campain__text p {
+    line-height: 28px;
+    font-size: 16px;
+    width: 800px;
+    margin: 0 auto 54px;
+  }
   .top_page {
     width: 100%;
     max-width: 980px;
@@ -678,16 +778,42 @@ form h2:before {
   }
   .top_image img {
     width: 100%;
-    max-width: 980px;
+    max-width: 533px;
+  }
+  .que-start__btn {
+    padding-top: 23px;
+  }
+  .que-start__btn a {
+    font-size: 24px;
+    padding: 2px 0 0 0;
+    height: 80px;
+    border-radius: 80px;
+  }
+  .que-start__btn a:after {
+    width: 12px;
+    height: 12px;
+  }
+  h1.que {
+    height: 93px;
+  }
+  h1.que img {
+    width: 227px;
   }
   form {
     width: 600px;
   }
   form h2 {
-    font-size: 3vw;
+    font-size: 26px;
+    line-height: 43.3px;
+    margin: 36px auto 21px;
   }
   .que__text {
-    font-size: 4vw;
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .submit {
+    width: 224px;
   }
   .que__btn label {
     font-size: 1.4vw;
@@ -699,13 +825,30 @@ form h2:before {
   .que__btn label.active:after {
     left: 17px;
   }
+  .que-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .que-footer .copy {
+    font-size: 14px;
+    line-height: 42px;
+    color: #ffffff;
+    background-color: #4e4541;
+  }
   .result-area__discription h2 {
-    font-size: 3vw;
+    font-size: 20px;
     width: 600px;
+    margin: 0 auto;
+    line-height: 52px;
+  }
+  .result-area__discription h2 > img {
+    width: 380px;
+    display: block;
     margin: 0 auto;
   }
   .result-area > div {
-    width: 960px;
+    width: 980px;
     margin: 0 auto;
   }
   .result-area__image {
@@ -713,49 +856,86 @@ form h2:before {
     margin: 0 auto;
   }
   .result-area__caption {
-    font-size: 3vw;
+    font-size: 24px;
   }
   .result-area__text {
-    font-size: 2vw;
+    font-size: 18px;
+    color: #4d4747;
+    line-height: 34px;
+    width: 800px;
+    margin: 26px auto 35px;
   }
   .result-area__merit {
     background-size: 100px 100px;
     background-position: 25px 15px;
-    font-size: 2vw;
+    font-size: 16px;
+    width: 800px;
+    margin: 0 auto 26px;
+    padding: 32px 45px;
   }
   .result-area__merit > div:first-child {
-    font-size: 3vw;
-    height: 120px;
-    padding-left: 130px;
+    font-size: 24px;
   }
   .result-area__merit > div:first-child span {
-    font-size: 2vw;
-    left: 130px;
+    font-size: 16px;
   }
   .container-content {
-    width: 960px;
+    width: 980px;
     margin: 0 auto;
   }
+  .top_share_bottom {
+    top: 17%;
+  }
+  .top_share_bottom li {
+    width: 47px;
+  }
+  .top_image_hitsuji img {
+    width: 15%;
+  }
+  .top_image_hitsuji img:nth-child(1) {
+    left: 17%;
+    top: 21%;
+  }
+  .top_image_hitsuji img:nth-child(2) {
+    left: 71%;
+    top: 11%;
+  }
+  .top_image_hitsuji img:nth-child(3) {
+    left: 16%;
+    top: 52%;
+    width: 14%;
+  }
+  .top_image_hitsuji img:nth-child(4) {
+    left: 72%;
+    top: 51%;
+    width: 13%;
+  }
+  ul.sns-area li {
+    width: 53px;
+  }
+  .top-text p {
+    font-size: 20px;
+  }
   .result-area__sns {
-    width: 480px;
+    width: 400px;
     margin: 0 auto;
   }
   .result-area__sns span {
-    font-size: 1.5vw;
+    font-size: 20px;
   }
   .result-area__sns span:before, .result-area__sns span:after {
     right: 3%;
-    width: 1vw;
-    height: 1vw;
+    width: 10px;
+    height: 10px;
   }
   .result-area__sns span:before {
-    right: 20%;
+    right: 14%;
   }
   .result-area__sns span:after {
-    right: 15%;
+    right: 9%;
   }
   .result-area__sns div {
-    width: 16%;
+    width: 53px;
   }
   .result-area__friends h3 {
     font-size: 2vw;

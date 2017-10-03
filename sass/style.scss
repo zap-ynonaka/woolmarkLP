@@ -12,6 +12,7 @@ li{list-style-type: none;}
     text-align: center;
     img {
       width: 90%;
+      max-width: 533px;
     }
   }
   &__text {
@@ -31,13 +32,16 @@ li{list-style-type: none;}
   padding: 20px 8%;
   display: block;
 }
-footer div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333333;
-  text-align:center;
-  font-weight: bold;
+footer {
+  width: 100%;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    text-align:center;
+    font-weight: bold;
+  }
 }
 
 ul.sns-area {
@@ -54,17 +58,29 @@ ul.sns-area {
 .copy {
   background-color: #f0efeb;
   padding: 8px 0;
-  font-size: 1vw;
+  font-size: 10px;
 }
 
 
 
 // index.html
+.container-top {
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
 .que-start__btn {
   line-height: 50px;
   padding-top: 10px;
   text-align: center;
   position: relative;
+  max-width: 360px;
+  width: 80%;
+  margin: 0 auto;
   a {
     background-color: #FFF;
     color: #4FB748;
@@ -84,9 +100,10 @@ ul.sns-area {
       border-right: solid 3px #4bad31;
       border-top: solid 3px #4bad31;
       margin-left: 3px;
-  }
+    }
   }
 }
+
 
 // que.html
 h1.que {
@@ -237,7 +254,7 @@ form {
       img {position: absolute;}
       &.image__before img {
         width: 35%;
-        top: 11%;
+        top: 8%;
       }
       &.image__bg img {
         width: 85%;
@@ -270,7 +287,26 @@ form {
     background-repeat: no-repeat;
     background-position: 26px 22px;
     &.no {
-      &_01 {background-image: url('../img/result/kekka_01_bub.png');}
+      &_01 {background-image: url('../img/result/kekka_01_mas.png');}
+      &_02 {background-image: url('../img/result/kekka_02_bub.png');}
+      &_03 {background-image: url('../img/result/kekka_03_thu.png');}
+      &_04 {background-image: url('../img/result/kekka_04_dre.png');}
+      &_05 {background-image: url('../img/result/kekka_05_rub.png');}
+      &_06 {background-image: url('../img/result/kekka_06_kom.png');}
+      &_07 {background-image: url('../img/result/kekka_07_sky.png');}
+      &_08 {background-image: url('../img/result/kekka_08_gag.png');}
+      &_09 {background-image: url('../img/result/kekka_09_ele.png');}
+      &_10 {background-image: url('../img/result/kekka_10_pho.png');}
+      &_11 {background-image: url('../img/result/kekka_11_bab.png');}
+      &_12 {background-image: url('../img/result/kekka_12_hot.png');}
+      &_13 {background-image: url('../img/result/kekka_13_nat.png');}
+      &_14 {background-image: url('../img/result/kekka_14_mar.png');}
+      &_15 {background-image: url('../img/result/kekka_15_sof.png');}
+      &_16 {background-image: url('../img/result/kekka_16_rel.png');}
+      &_17 {background-image: url('../img/result/kekka_17_ter.png');}
+      &_18 {background-image: url('../img/result/kekka_18_sto.png');}
+      &_19 {background-image: url('../img/result/kekka_19_adv.png');}
+      &_20 {background-image: url('../img/result/kekka_20_zom.png');}
     }
     > div:first-child {
       display: flex;
@@ -298,7 +334,7 @@ form {
     padding: 16px 0 0;
     div {
       width: 14%;
-      padding-left: 12px;
+      margin-left: 10px;
       a {display: block;}
     }
     span {
