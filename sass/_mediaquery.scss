@@ -5,29 +5,65 @@
 }
   
 @media screen and (min-width:720px) {
+  .woolmark-campain__text {
+    p {
+      line-height: 28px;
+      font-size: 16px;
+      width: 800px;
+      margin: 0 auto 54px;
+    }
+  }
 
-.top_page{
-  width:100%;
-  max-width:980px;
-  margin: 0 auto;
-}
+  .top_page{
+    width:100%;
+    max-width:980px;
+    margin: 0 auto;
+  }
 
-.top_image img{
-  width:100%;
-  max-width:980px;
-}
+  .top_image img{
+    width:100%;
+    max-width:533px;
+  }
+  .que-start__btn {
+    padding-top: 23px;
+    a {
+      font-size: 24px;
+      padding: 2px 0 0 0;
+      height: 80px;
+      border-radius: 80px;
+      &:after {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
 
+
+
+
+  h1.que {
+    height: 93px;
+    img {
+      width: 227px;
+    }
+  }
   form {
     width: 600px;
     h2 {
-      font-size: 3vw;
+      font-size: 26px;
+      line-height: 43.3px;
+      margin: 36px auto 21px;
     }
   }
 
   .que__text {
-    font-size: 4vw;
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 30px;
   }
-
+  .submit {
+    width: 224px;
+  }
   .que__btn label {
     font-size: 1.4vw;
     padding-left: 48px;
@@ -38,15 +74,34 @@
       left: 17px;
     }
   }
+  .que-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .copy {
+      font-size: 14px;
+      line-height: 42px;
+      color: #ffffff;
+      background-color: #4e4541;
+    }
+  }
 
   .result-area {
-    &__discription h2 {
-      font-size: 3vw;
-      width: 600px;
-      margin: 0 auto;
+    &__discription {
+      h2 {
+        font-size: 20px;
+        width: 600px;
+        margin: 0 auto;
+        line-height: 52px;
+        > img {
+          width: 380px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
     }
     > div {
-      width: 960px;
+      width: 980px;
       margin: 0 auto;
     }
     &__image {
@@ -54,50 +109,75 @@
       margin: 0 auto;    
     }
     &__caption {
-      font-size: 3vw;
+      font-size: 24px;
     }
     &__text {
-      font-size: 2vw;
+      font-size: 18px;
+      color: #4d4747;
+      line-height: 34px;
+      width: 800px;
+      margin: 26px auto 35px;
     }
     &__merit {
       background-size: 100px 100px;
       background-position: 25px 15px;
-      font-size: 2vw;
+      font-size: 16px;
+      width: 800px;
+      margin: 0 auto 26px;
+      padding: 32px 45px;
       > div:first-child {
-        font-size: 3vw;
-        height: 120px;
-        padding-left: 130px;
+        font-size: 24px;
+        margin-bottom: 24px;
         span {
-          font-size: 2vw;
-          left: 130px;
+          font-size: 16px;
         }
       }
     }
   }
 
   .container-content {
-    width: 960px;
+    width: 980px;
     margin: 0 auto;
   }
 
+  .top_share_bottom {
+    top: 17%;
+    li {
+      width: 47px;
+    }
+  }
+  .top_image_hitsuji img {
+    width: 15%;
+    &:nth-child(1) {left: 17%;top: 21%;}
+    &:nth-child(2) {left: 71%;top: 11%;}
+    &:nth-child(3) {left: 16%;top: 52%;width: 14%;}
+    &:nth-child(4) {left: 72%;top: 51%;width: 13%;}
+  }
+  ul.sns-area li {
+    width: 53px;
+  }
+  .top-text p {
+    font-size: 20px;
+  }
   .result-area__sns {
-    width: 480px;margin: 0 auto;
+    width: 400px;
+    margin: 0 auto;
     span {
-      font-size: 1.5vw;
+      font-size: 20px;
       &:before, &:after {
         right: 3%;
-        width: 1vw;
-        height: 1vw;
+        width: 10px;
+        height: 10px;
       }
       &:before{
-        right: 20%;
+        right: 14%;
       }
       &:after {
-        right: 15%;
+        right: 9%;
       }
     }
     div {
-      width: 16%;
+      width: 53px;
     }
   }
 
@@ -114,11 +194,11 @@
   .width-sp {display: none;}
   .width-pc {display: block;}
 
-.home-page-image-wrapper h1 img.pc {
-    display: block;
-}
+  .home-page-image-wrapper h1 img.pc {
+      display: block;
+  }
 
-.home-page-image-wrapper h1 img.sp {
-  display: none;
-}
+  .home-page-image-wrapper h1 img.sp {
+    display: none;
+  }
 };
