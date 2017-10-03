@@ -572,22 +572,22 @@ form h2:before {
   width: 20%;
 }
 
-.top_image_hitsuji :nth-child(1) {
+.top_image_hitsuji img:nth-child(1) {
   left: 5%;
   top: 15%;
 }
 
-.top_image_hitsuji :nth-child(2) {
+.top_image_hitsuji img:nth-child(2) {
   left: 75%;
   top: 10%;
 }
 
-.top_image_hitsuji :nth-child(3) {
+.top_image_hitsuji img:nth-child(3) {
   left: 5%;
   top: 48%;
 }
 
-.top_image_hitsuji :nth-child(4) {
+.top_image_hitsuji img:nth-child(4) {
   left: 80%;
   top: 45%;
 }
