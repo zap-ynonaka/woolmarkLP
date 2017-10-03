@@ -48,8 +48,18 @@
   }
 }
 
-.home-page-image-wrapper h1 {
+.home-page-image-wrapper{
+h1 {
   position: relative;
+img{
+&.pc {
+  display: none;
+  }
+&.sp {
+  display: block;
+  }
+  }
+}
 }
 
 .top_share_bottom {

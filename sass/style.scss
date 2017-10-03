@@ -69,7 +69,7 @@ ul.sns-area {
     background-color: #FFF;
     color: #4FB748;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 2vw;
     border-radius: 30px;
     display: block;
     display: flex;
@@ -79,8 +79,8 @@ ul.sns-area {
       content: "";
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
-      width: 5px;
-      height: 5px;
+      width: 1vw;
+      height: 1vw;
       border-right: solid 3px #4bad31;
       border-top: solid 3px #4bad31;
       margin-left: 3px;
