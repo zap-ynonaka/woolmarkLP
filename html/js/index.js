@@ -10622,4 +10622,19 @@ console.log(resultHeight);
 $('.js-height').css('height', resultHeight);
 
 
+//TOP画面を表示して３秒後に消える
+
+$('.top_image img').addClass("fadeOut");
+
+setTimeout(function(){
+  $('.top_image').addClass("fadeOut2");
+},3000);
+
+setTimeout(function(){
+  $('.top_image').css('display','none');
+},5000);
+
+
+
+
 });
