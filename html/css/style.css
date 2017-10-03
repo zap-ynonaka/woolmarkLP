@@ -22,6 +22,14 @@ li {
   list-style-type: none;
 }
 
+.width-sp {
+  display: block;
+}
+
+.width-pc {
+  display: none;
+}
+
 .woolmark-campain__img {
   background-color: #fff;
   text-align: center;
@@ -698,14 +706,14 @@ form h2:before {
     background-position: 25px 15px;
     font-size: 2vw;
   }
-  .result-area__merit > div:first-child span {
-    font-size: 2vw;
-    left: 130px;
-  }
   .result-area__merit > div:first-child {
     font-size: 3vw;
     height: 120px;
     padding-left: 130px;
+  }
+  .result-area__merit > div:first-child span {
+    font-size: 2vw;
+    left: 130px;
   }
   .container-content {
     width: 800px;
@@ -738,6 +746,12 @@ form h2:before {
   .result-area__friends ul {
     width: 450px;
     margin: 12px auto 0;
+  }
+  .width-sp {
+    display: none;
+  }
+  .width-pc {
+    display: block;
   }
 }
 
