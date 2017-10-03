@@ -705,7 +705,7 @@ form h2:before {
     margin: 0 auto;
   }
   .result-area > div {
-    width: 800px;
+    width: 960px;
     margin: 0 auto;
   }
   .result-area__image {
@@ -733,7 +733,7 @@ form h2:before {
     left: 130px;
   }
   .container-content {
-    width: 800px;
+    width: 960px;
     margin: 0 auto;
   }
   .result-area__sns {
