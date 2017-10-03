@@ -107,7 +107,7 @@ ul.sns-area li {
   background-color: #FFF;
   color: #4FB748;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 2vw;
   border-radius: 30px;
   display: block;
   display: -webkit-box;
@@ -125,8 +125,8 @@ ul.sns-area li {
   content: "";
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  width: 5px;
-  height: 5px;
+  width: 1vw;
+  height: 1vw;
   border-right: solid 3px #4bad31;
   border-top: solid 3px #4bad31;
   margin-left: 3px;
@@ -539,6 +539,14 @@ form h2:before {
   position: relative;
 }
 
+.home-page-image-wrapper h1 img.pc {
+  display: none;
+}
+
+.home-page-image-wrapper h1 img.sp {
+  display: block;
+}
+
 .top_share_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,6 +671,15 @@ form h2:before {
 }
 
 @media screen and (min-width: 720px) {
+  .top_page {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .top_image img {
+    width: 100%;
+    max-width: 980px;
+  }
   form {
     width: 600px;
   }
@@ -752,6 +769,12 @@ form h2:before {
   }
   .width-pc {
     display: block;
+  }
+  .home-page-image-wrapper h1 img.pc {
+    display: block;
+  }
+  .home-page-image-wrapper h1 img.sp {
+    display: none;
   }
 }
 

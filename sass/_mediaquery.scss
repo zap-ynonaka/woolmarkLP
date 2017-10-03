@@ -5,6 +5,18 @@
 }
   
 @media screen and (min-width:720px) {
+
+.top_page{
+  width:100%;
+  max-width:980px;
+  margin: 0 auto;
+}
+
+.top_image img{
+  width:100%;
+  max-width:980px;
+}
+
   form {
     width: 600px;
     h2 {
@@ -101,5 +113,12 @@
 
   .width-sp {display: none;}
   .width-pc {display: block;}
+
+.home-page-image-wrapper h1 img.pc {
+    display: block;
 }
 
+.home-page-image-wrapper h1 img.sp {
+  display: none;
+}
+};
