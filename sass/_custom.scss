@@ -86,22 +86,22 @@
     top: 0;
     left: 0;
     width: 20%;
-  }
- :nth-child(1) {
+ &:nth-child(1) {
     left: 5%;
     top: 15%;
   }
- :nth-child(2) {
+ &:nth-child(2) {
   left: 75%;
   top: 10%;
 }
- :nth-child(3) {
+ &:nth-child(3) {
   left: 5%;
   top: 48%;
 }
- :nth-child(4) {
+ &:nth-child(4) {
   left: 80%;
   top: 45%;
+}
 }
 }
 
