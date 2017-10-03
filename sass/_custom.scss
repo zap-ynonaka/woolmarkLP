@@ -38,7 +38,6 @@
   width: 100%;
   height: 100%;
   background-color: #FFF;
-  display:none;
   img{
     position: absolute;
     top: 0;
@@ -73,5 +72,66 @@
   }
   a{
     display: block;
+  }
+}
+
+.top_image_hitsuji {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+   img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+  }
+ :nth-child(1) {
+    left: 5%;
+    top: 15%;
+  }
+ :nth-child(2) {
+  left: 75%;
+  top: 10%;
+}
+ :nth-child(3) {
+  left: 5%;
+  top: 48%;
+}
+ :nth-child(4) {
+  left: 80%;
+  top: 45%;
+}
+}
+
+.fadeOut {
+  animation-duration: 3s;
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+  opacity:0;
+  }
+  100% {
+  opacity:1;
+  }
+}
+
+.fadeOut2{
+  animation-duration: 2s;
+  animation-name: fadeOut2;
+}
+
+@keyframes fadeOut2 {
+  0% {
+  opacity:1;
+  }
+  50%{
+  opacity:1;
+  }
+  100%{
+  opacity:0;
   }
 }
