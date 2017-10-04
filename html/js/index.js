@@ -10623,26 +10623,26 @@ $('.js-height').css('height', resultHeight);
 
 
 //TOP画面を表示して5秒後に消える
-$('.top_image img').addClass("fadeOut");
+// $('.top_image img').addClass("fadeOut");
 
-setTimeout(function(){
-  $('.top_image').addClass("fadeOut2");
-},3000);
+// setTimeout(function(){
+//   $('.top_image').addClass("fadeOut2");
+// },3000);
 
-setTimeout(function(){
+// setTimeout(function(){
   $('.top_image').css('display','none');
-},5000);
+// },5000);
 
 //画面が表示されたらひつじちゃんをぽこぽこ
-$('.top_image_hitsuji img').hide();
+// $('.top_image_hitsuji img').hide();
 
-setTimeout(function(){
-var sheep = $('.top_image_hitsuji img');
-for(var i = 1; i < sheep.length+1; i++){
-var nom =  $('.top_image_hitsuji img:nth-child('+i+')'); 
-$(nom).delay(300*i).fadeIn(400);
-}
-},4500);
+// setTimeout(function(){
+// var sheep = $('.top_image_hitsuji img');
+// for(var i = 1; i < sheep.length+1; i++){
+// var nom =  $('.top_image_hitsuji img:nth-child('+i+')'); 
+// $(nom).delay(300*i).fadeIn(400);
+// }
+// },4500);
 
 });
 

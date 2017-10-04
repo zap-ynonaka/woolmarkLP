@@ -1,7 +1,11 @@
 @media screen and (max-width: 320px){
-  .top-text {
-    padding: 0px;
+  .top-text p {
+    font-size: 13px;
   }
+  .que-start__btn {
+    line-height: 45px;
+}
+
 }
   
 @media screen and (min-width:720px) {
