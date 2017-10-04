@@ -22,6 +22,7 @@ li{list-style-type: none;}
     p {
       line-height: 1.8;
       font-size: 13px;
+      letter-spacing: 1px;
       &:nth-child(2) {
         margin-bottom: 0;
       }
@@ -65,13 +66,11 @@ ul.sns-area {
 
 // index.html
 .container-top {
-  width: 100%;
-  max-width: 600px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 40%;
 }
 .que-start__btn {
   line-height: 50px;
@@ -85,7 +84,6 @@ ul.sns-area {
     background-color: #FFF;
     color: #4FB748;
     text-decoration: none;
-    font-size: 2vw;
     border-radius: 30px;
     display: block;
     display: flex;

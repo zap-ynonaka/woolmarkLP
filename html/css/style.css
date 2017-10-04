@@ -49,6 +49,7 @@ li {
 .woolmark-campain__text p {
   line-height: 1.8;
   font-size: 13px;
+  letter-spacing: 1px;
 }
 
 .woolmark-campain__text p:nth-child(2) {
@@ -102,13 +103,11 @@ ul.sns-area li {
 }
 
 .container-top {
-  width: 100%;
-  max-width: 600px;
   position: absolute;
-  left: 0;
   bottom: 0;
   right: 0;
-  margin: auto;
+  left: 0;
+  height: 40%;
 }
 
 .que-start__btn {
@@ -125,7 +124,6 @@ ul.sns-area li {
   background-color: #FFF;
   color: #4FB748;
   text-decoration: none;
-  font-size: 2vw;
   border-radius: 30px;
   display: block;
   display: -webkit-box;
@@ -586,19 +584,28 @@ form h2:before {
 .container-top {
   position: absolute;
   bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40%;
 }
 
 .container-bottom {
-  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 
 .top-text {
   text-align: center;
   color: #FFF;
-}
-
-.top-text p {
-  font-size: 3.5vw;
 }
 
 .event-campain p {
@@ -650,7 +657,7 @@ form h2:before {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 8%;
+  top: 10%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -760,8 +767,11 @@ form h2:before {
 }
 
 @media screen and (max-width: 320px) {
-  .top-text {
-    padding: 0px;
+  .top-text p {
+    font-size: 13px;
+  }
+  .que-start__btn {
+    line-height: 45px;
   }
 }
 
