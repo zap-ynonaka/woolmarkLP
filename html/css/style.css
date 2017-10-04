@@ -98,7 +98,7 @@ ul.sns-area li {
 .copy {
   background-color: #f0efeb;
   padding: 8px 0;
-  font-size: 1vw;
+  font-size: 10px;
 }
 
 .container-top {
@@ -249,6 +249,7 @@ form h2:before {
 
 .que__btn input[type=radio] {
   -webkit-appearance: none;
+  display: none;
 }
 
 .que__btn label.active {
@@ -848,7 +849,8 @@ form h2:before {
     margin: 0 auto;
   }
   .result-area > div {
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
     margin: 0 auto;
   }
   .result-area__image {
@@ -875,6 +877,7 @@ form h2:before {
   }
   .result-area__merit > div:first-child {
     font-size: 24px;
+    margin-bottom: 24px;
   }
   .result-area__merit > div:first-child span {
     font-size: 16px;
