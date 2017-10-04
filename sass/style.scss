@@ -90,14 +90,15 @@ ul.sns-area {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
     &:after {
       content: "";
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
-      width: 1vw;
-      height: 1vw;
-      border-right: solid 3px #4bad31;
-      border-top: solid 3px #4bad31;
+      width: 6px;
+      height: 6px;
+      border-right: solid 2px #4bad31;
+      border-top: solid 2px #4bad31;
       margin-left: 3px;
     }
   }
