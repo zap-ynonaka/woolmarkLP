@@ -7,17 +7,20 @@
 .container-top {
   position: absolute;
   bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40%;
 }
 
 .container-bottom {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .top-text {
   text-align: center;
   color: #FFF;
-  p{
-    font-size: 3.5vw;
-  }
 }
 .event-campain {
   p {
@@ -49,33 +52,24 @@
 }
 
 .home-page-image-wrapper{
-h1 {
-  position: relative;
-img{
-&.pc {
-  display: none;
+  h1 {
+    position: relative;
+  img{
+    &.pc {display: none;}
+    &.sp {display: block;}
+    }
   }
-&.sp {
-  display: block;
-  }
-  }
-}
 }
 
 .top_share_bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  top: 8%;
+  top: 10%;
   left: 0;
   right: 0;
   bottom: 0;
   justify-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   li{
     width: 10%;
     margin: 0 5px;
@@ -91,28 +85,28 @@ img{
   left: 0;
   height: 100%;
   width: 100%;
-   img{
+  img{
     position: absolute;
     top: 0;
     left: 0;
     width: 20%;
- &:nth-child(1) {
-    left: 5%;
-    top: 15%;
+    &:nth-child(1) {
+      left: 5%;
+      top: 15%;
+    }
+    &:nth-child(2) {
+      left: 75%;
+      top: 10%;
+    }
+    &:nth-child(3) {
+      left: 5%;
+      top: 48%;
+    }
+    &:nth-child(4) {
+      left: 80%;
+      top: 45%;
+    }
   }
- &:nth-child(2) {
-  left: 75%;
-  top: 10%;
-}
- &:nth-child(3) {
-  left: 5%;
-  top: 48%;
-}
- &:nth-child(4) {
-  left: 80%;
-  top: 45%;
-}
-}
 }
 
 .fadeOut {
