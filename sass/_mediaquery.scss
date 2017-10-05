@@ -4,23 +4,29 @@
   }
   .que-start__btn {
     line-height: 45px;
-}
+  }
+  .result-area__sns span {
+    font-size: 14px;
+  }
 
 }
   
 @media screen and (min-width:720px) {
+
+  .container-top {
+    height: 35%;
+  }
   .woolmark-campain__text {
     p {
       line-height: 28px;
       font-size: 16px;
-      width: 800px;
+      width: 80%;
       margin: 0 auto 54px;
     }
   }
 
   .top_page{
     width:100%;
-    max-width:980px;
     margin: 0 auto;
   }
 
@@ -38,6 +44,8 @@
       &:after {
         width: 12px;
         height: 12px;
+        border-right: solid 3px #4bad31;
+        border-top: solid 3px #4bad31;
       }
     }
   }
@@ -106,7 +114,6 @@
     }
     > div {
       width: 100%;
-      max-width: 980px;
       margin: 0 auto;
     }
     &__image {
@@ -120,14 +127,16 @@
       font-size: 18px;
       color: #4d4747;
       line-height: 34px;
-      width: 800px;
+      width: 80%;
+      max-width: 800px;
       margin: 26px auto 35px;
     }
     &__merit {
       background-size: 100px 100px;
       background-position: 25px 15px;
       font-size: 16px;
-      width: 800px;
+      width: 80%;
+      max-width: 800px;
       margin: 0 auto 26px;
       padding: 32px 45px;
       > div:first-child {
@@ -141,7 +150,7 @@
   }
 
   .container-content {
-    width: 980px;
+    width: 100%;
     margin: 0 auto;
   }
 

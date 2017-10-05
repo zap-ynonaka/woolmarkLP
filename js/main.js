@@ -18,7 +18,7 @@ $(function(){
         li = 'li:nth-of-type(' + val + ')';
 
     // 発火した時クリック
-    if (val < 20){
+    if (val <= 21){
       $('ul#que > li').removeClass('active');
       $(li).addClass('active');
     } else {
